@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xys.searchbox.MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="#DDDDDD"
+        android:padding="8dp">
+
+        <EditText
+            android:id="@+id/et_searchbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/search_frame"
+            android:hint="请输入你要输入的东西"
+            android:imeOptions="actionSearch"
+            android:singleLine="true"
+            android:textColorHint="#BEBEBE"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="16sp"/>
+
+        <ImageView
+            android:id="@+id/iv_clean"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="10dp"
+            android:clickable="true"
+            android:src="@drawable/search_cancel"
+            android:visibility="gone"/>
+    </FrameLayout>
+
+</LinearLayout>
